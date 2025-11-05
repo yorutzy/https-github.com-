@@ -1,0 +1,141 @@
+/* === Global Styles === */
+body {
+    background: linear-gradient(135deg, #0d0d1a, #1b1b2f);
+    color: #eaeaea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 40px;
+}
+
+/* === Headings === */
+h2, h3 {
+    text-align: center;
+    color: #7f5af0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(127, 90, 240, 0.5);
+}
+
+/* === Fieldset (Form Container) === */
+fieldset {
+    border: 2px solid #7f5af0;
+    border-radius: 15px;
+    padding: 30px;
+    width: 480px;
+    background: rgba(20, 20, 35, 0.9);
+    box-shadow: 0 0 25px rgba(127, 90, 240, 0.2);
+    margin-top: 20px;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease;
+}
+
+fieldset:hover {
+    transform: translateY(-3px);
+}
+
+legend {
+    color: #7f5af0;
+    font-weight: bold;
+    padding: 0 12px;
+    font-size: 1.1em;
+}
+
+/* === Input Fields === */
+input[type="text"],
+input[type="number"] {
+    width: 95%;
+    max-width: 500px;
+    padding: 12px 14px;
+    margin: 10px 0 18px 0;
+    border: 1px solid #3a3a5a;
+    border-radius: 8px;
+    background-color: #1f1f33;
+    color: #eaeaea;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #7f5af0;
+    box-shadow: 0 0 8px rgba(127, 90, 240, 0.5);
+    outline: none;
+}
+
+/* === Submit Button === */
+input[type="submit"] {
+    background: linear-gradient(90deg, #7f5af0, #5ddcff);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.03);
+    background: linear-gradient(90deg, #5ddcff, #7f5af0);
+}
+
+/* === Links === */
+a {
+    text-decoration: none;
+    color: #5ddcff;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7f5af0;
+    text-shadow: 0 0 8px rgba(127, 90, 240, 0.6);
+}
+
+/* === Table Styles === */
+table {
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: rgba(20, 20, 35, 0.95);
+    box-shadow: 0 0 15px rgba(127, 90, 240, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid rgba(127, 90, 240, 0.4);
+    padding: 10px 15px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(90deg, #7f5af0, #5ddcff);
+    color: #121212;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: rgba(50, 50, 80, 0.7);
+}
+
+/* === Responsive (Mobile) === */
+@media (max-width: 600px) {
+    fieldset {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+    }
+}
